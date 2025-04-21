@@ -1,0 +1,90 @@
+import React from 'react';
+import { Link, useLoaderData, useParams } from 'react-router';
+import { CiCircleAlert } from "react-icons/ci";
+import { bookLawyer } from '../Component/Utils';
+
+
+const Details = () => {
+    const data = useLoaderData()
+
+    const {id} = useParams()
+    const singleinfo = data.find(ab => ab.id === parseInt(id))
+    console.log(singleinfo)
+
+    const {name,specialty,license,profileImage,availability,experience,weekdays,fee}= singleinfo
+
+
+    const handleBookLawyer =()=>{
+
+        bookLawyer(singleinfo)
+    }
+
+    return (
+        <div>
+
+            <div className='text-center my-8 bg-base-200 p-16'>
+                <h1 className='text-3xl font-bold my-5'>Lawyer’s Profile Details</h1>
+                <p >Lorem ipsum dolor sit amet consectetur. Sit enim blandit orci tortor amet ut. Suscipit sed est fermentum magna. Quis vitae tempus facilisis turpis imperdiet mattis donec dignissim volutpat.</p>
+            </div>
+
+              <div className="card card-side bg-base-100 shadow-sm px-10">
+  <figure>
+    <img className='w-24 h-32 object-cover rounded-md'
+      src={profileImage}
+      alt="Movie" />
+  </figure>
+  <div className="card-body">
+    <div className='flex gap-2'>
+    <button className='text-blue-600 rounded-xl bg-blue-200 px-2'>{experience}</button>
+    </div>
+   
+    <h2 className="card-title">{name}</h2>
+    <p>{specialty} <span className='ml-8'>{license}</span></p> 
+
+    <div className='flex gap-6 items-center'>
+        <div><h2>Availablity</h2></div>
+        <div className='flex'>
+    {weekdays?.map((day, index) => (
+        <div 
+          key={index}
+          className="bg-amber-100 text-red-600 px-4 py-2 rounded-lg mx-1"
+        >
+          {day}
+        </div>
+      ))}
+    </div>
+
+    </div>
+ <div className='flex gap-4'>
+
+    <h2>Consultation Fee: </h2>
+<h3 className='text-green-700 font-bold'>Taka. {fee}</h3>
+
+ </div>
+
+    </div>
+</div>
+
+<div className='my-4 p-6'>
+
+<h2 className='font-bold text-center text-2xl mb-4'>Book an Appointment</h2>
+
+<div className='flex justify-between'>
+<h2 className='font-bold text-xl'>Availablity</h2>
+<h2 className='bg-green-100 text-green-700 rounded-2xl px-4 font-semibold'>Lawyer  Available Today</h2>
+
+</div>
+
+<h2 className='bg-amber-100 text-amber-500 rounded-2xl px-6 py-2 mt-8 flex items-center gap-2'><CiCircleAlert size={25}/> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</h2>
+
+<Link to={''}> 
+<button onClick={handleBookLawyer} className='font-semibold bg-green-600 px-120 py-2 rounded-3xl text-xl text-white my-6'>Book Appointment Now</button>
+</Link>
+</div>
+
+
+        </div>
+    );
+};
+
+export default Details;
