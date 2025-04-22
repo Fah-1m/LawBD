@@ -9,7 +9,7 @@ const Details = () => {
 
     const {id} = useParams()
     const singleinfo = data.find(ab => ab.id === parseInt(id))
-    console.log(singleinfo)
+    // console.log(singleinfo)
 
     const {name,specialty,license,profileImage,availability,experience,weekdays,fee}= singleinfo
 
@@ -77,7 +77,7 @@ const Details = () => {
 
 <h2 className='bg-amber-100 text-amber-500 rounded-2xl px-6 py-2 mt-8 flex items-center gap-2'><CiCircleAlert size={25}/> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</h2>
 
-<Link to={''}> 
+<Link to={'/mybookings'}> 
 <button onClick={handleBookLawyer} className='font-semibold bg-green-600 px-120 py-2 rounded-3xl text-xl text-white my-6'>Book Appointment Now</button>
 </Link>
 </div>

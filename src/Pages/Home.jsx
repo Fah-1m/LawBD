@@ -5,7 +5,7 @@ import LawyerContainer from '../Component/LawyerContainer';
 
 const Home = () => {
     const data = useLoaderData();
-    console.log(data)
+ 
     return (
         <div>
          <Hero></Hero>

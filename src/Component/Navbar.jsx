@@ -14,7 +14,7 @@ const Navbar = () => {
     </div>
     <a className="btn btn-ghost text-xl"><img src="/public/logo.png" alt="" /> Law.BD</a>
   </div>
-  <div className="navbar-center hidden lg:flex">
+  <div className="navbar-center flex">
     <ul className="menu menu-horizontal px-1">
      
         <li><NavLink className={({isActive})=>(isActive ? 'text-blue-500 underline' : '')} to={'/'}>Home</NavLink></li>

@@ -16,7 +16,7 @@ const LawyerContainer = ({info}) => {
 
 
     },[info,showall])
-    console.log(info)
+
     return (
         <div>
                <div className='text-center p-16'>
