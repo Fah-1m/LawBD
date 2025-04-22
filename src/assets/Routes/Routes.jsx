@@ -5,6 +5,7 @@ import Blogs from '../../Pages/Blogs'
 import Mybookings from "../../Pages/Mybookings"
 import Details from "../../Pages/Details"
 import Error from "../../Pages/Error"
+import Nobooking from "../../Component/Nobooking"
 
 
 
@@ -33,6 +34,10 @@ const router= createBrowserRouter([
             element: <Details></Details>,
             loader: ()=> fetch ('/public/Fakedata.json')
         },
+        {
+            path: '/no',
+            element: <Nobooking></Nobooking>
+        }
         
      ]
     }
