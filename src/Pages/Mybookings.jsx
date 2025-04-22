@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Rechart from '../Component/Rechart';
-import { getfav, remove } from '../Component/Utils';
-import LawyerCard from '../Component/LawyerCard';
+import { getfav } from '../Component/Utils';
 import Bookings from './Bookings';
 
 const Mybookings = () => {
@@ -25,21 +24,19 @@ const handleDelete= id =>{
     localStorage.setItem("lawyer", JSON.stringify(updated)); 
 }
 
- 
+ console.log(showdata)
     return (
         <div>
 {/* Rechart */}
-<Rechart></Rechart>
-
-
-           <div>
-            <h2 className='text-3xl font-bold my-6 text-center'>My Today Appointments</h2>
-            <p className='text-center mb-6'>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
-           </div>
-
-<div>
-          
+<div >
+<Rechart infodata={showdata} >  </Rechart>
 </div>
+
+
+       <div>
+        <h2 className='text-3xl font-bold my-6 text-center'>My Today Appointments</h2>
+      <p className='text-center mb-6'>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
+         </div>
 
 {Array.isArray(showdata) && showdata.length > 0 ? (
   showdata.map(details => (

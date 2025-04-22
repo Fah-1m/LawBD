@@ -2,6 +2,8 @@ import React from 'react';
 import Mybookings from './Mybookings';
 import { remove } from '../Component/Utils';
 import { Link } from 'react-router';
+import Rechart from '../Component/Rechart';
+import { Bar } from 'recharts';
 
 const Bookings = ({infodata, handleDelete}) => {
 
@@ -10,7 +12,15 @@ console.log(infodata)
 
 
     return (
-        <div className='border-1 rounded-2xl my-8 px-8 py-4'>
+        <div>
+       <div>
+        <div>
+                             </div>
+                 
+                     
+       </div>
+<div>
+<div className='border-1 rounded-2xl my-8 px-8 py-4'>
             <div className='flex justify-between'>
 
             <div>
@@ -23,6 +33,11 @@ console.log(infodata)
           
          
         </div>
+</div>
+
+        </div>
+        
+      
     );
 };
 
