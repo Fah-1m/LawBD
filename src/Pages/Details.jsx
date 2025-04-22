@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link, useLoaderData, useParams } from 'react-router';
+import React, { useEffect } from 'react';
+import { Link, useLoaderData, useNavigate, useParams } from 'react-router';
 import { CiCircleAlert } from "react-icons/ci";
 import { bookLawyer } from '../Component/Utils';
 import toast, { Toaster } from 'react-hot-toast';
@@ -8,22 +8,51 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Details = () => {
     
-    const data = useLoaderData()
+    // const data = useLoaderData()
 
-    const {id} = useParams()
-    const singleinfo = data.find(ab => ab.id === parseInt(id))
-    // console.log(singleinfo)
+    // const {id} = useParams()
+    // const singleinfo = data.find(ab => ab.id === parseInt(id))
+    // // console.log(singleinfo)
 
-    const {name,specialty,license,profileImage,availability,experience,weekdays,fee}= singleinfo
+    // const {name,specialty,license,profileImage,availability,experience,weekdays,fee}= singleinfo
 
 
+    // const handleBookLawyer =()=>{
+        
+    //     bookLawyer(singleinfo)
+    // }
+
+
+    const data = useLoaderData(); // full array
+    const { id } = useParams();
+    const navigate = useNavigate();
+  
+    const singleInfo = data.find(item => item.id === parseInt(id));
+    
     const handleBookLawyer =()=>{
         
-        bookLawyer(singleinfo)
+        // bookLawyer(singleinfo)
+        bookLawyer(singleInfo)
     }
 
+   
+    useEffect(() => {
+      if (isNaN(id) || !singleInfo) {
+        navigate("/34rete");
+      }
+    }, [singleInfo, navigate]);
+  
+    if (!singleInfo) return null;
+
     return (
-        
+
+    //     <div>
+    // <div className="p-6">
+    //   <h2 className="text-3xl font-bold">{singleInfo.name}</h2>
+    //   <p>{singleInfo.specialty}</p>
+    // </div>
+    //     </div>
+      
         <div>
              
 
@@ -35,26 +64,26 @@ const Details = () => {
               <div className="card card-side bg-base-100 shadow-sm px-10">
   <figure>
     <img className='w-24 h-32 object-cover rounded-md'
-      src={profileImage}
+      src={singleInfo.profileImage}
       alt="Movie" />
   </figure>
   <div className="card-body">
     <div className='flex gap-2'>
-    <button className='text-blue-600 rounded-xl bg-blue-200 px-2'>{experience}</button>
+    <button className='text-blue-600 rounded-xl bg-blue-200 px-2'>{singleInfo.experience}</button>
     </div>
    
-    <h2 className="card-title">{name}</h2>
-    <p>{specialty} <span className='ml-8'>{license}</span></p> 
+    <h2 className="card-title">{singleInfo.name}</h2>
+    <p>{singleInfo.specialty} <span className='ml-8'>{singleInfo.license}</span></p> 
 
     <div className='flex gap-6 items-center'>
         <div><h2>Availablity</h2></div>
         <div className='flex'>
-    {weekdays?.map((day, index) => (
+    {singleInfo.weekdays?.map((day, index) => (
         <div 
           key={index}
           className="bg-amber-100 text-red-600 px-4 py-2 rounded-lg mx-1"
         >
-          {day}
+          {singleInfo.day}
         </div>
       ))}
     </div>
@@ -63,7 +92,7 @@ const Details = () => {
  <div className='flex gap-4'>
 
     <h2>Consultation Fee: </h2>
-<h3 className='text-green-700 font-bold'>Taka. {fee}</h3>
+<h3 className='text-green-700 font-bold'>Taka. {singleInfo.fee}</h3>
 
  </div>
 
