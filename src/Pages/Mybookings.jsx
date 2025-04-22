@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Rechart from '../Component/Rechart';
 import { getfav } from '../Component/Utils';
 import Bookings from './Bookings';
+import toast from 'react-hot-toast';
 
 const Mybookings = () => {
    
@@ -18,6 +19,7 @@ useEffect(()=>{
 const handleDelete= id =>{
     // remove(id)
     // setShowdata(remove())
+    toast.error("Already added! You cannot Booked twice");
 
     const updated = showdata.filter(item => item.id !== id); // Just remove one
     setShowdata(updated);
@@ -28,7 +30,7 @@ const handleDelete= id =>{
     return (
         <div>
 {/* Rechart */}
-<div >
+<div className='my-8'>
 <Rechart infodata={showdata} >  </Rechart>
 </div>
 

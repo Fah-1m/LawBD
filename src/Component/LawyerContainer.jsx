@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import LawyerCard from './LawyerCard';
 
+
 const LawyerContainer = ({info}) => {
 
     const [showdata, setShowdata]= useState([])
@@ -23,12 +24,12 @@ const LawyerContainer = ({info}) => {
                 <h2 className='text-4xl font-bold'>Our Best Lawyers</h2>
                 <p className='mt-4'>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
             </div>
-            <div className='grid grid-cols-3 gap-8 p-5'>
+            <div className='grid md:grid-cols-2 grid-cols-1 md:gap-8 md:px-20 md:mb-10'>
                 {
                     showdata.map(details => <LawyerCard infodata={details}></LawyerCard>)
                 }
             </div>
-            <div className='text-center bg-green-600 text-white inline ml-150 rounded-xl px-4'>
+            <div className='text-center bg-green-600 text-white inline  md:ml-135 mx-auto rounded-xl px-4 py-1'>
 
             <button className='' onClick={()=> {
         

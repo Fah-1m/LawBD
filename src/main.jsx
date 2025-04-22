@@ -4,10 +4,12 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import router from './assets/Routes/Routes.jsx'
+import { Toaster } from 'react-hot-toast'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
+    <Toaster position="top-right" reverseOrder={false} />
   </StrictMode>,
 )

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router';
 
+
+
 const Navbar = () => {
     return (
         <div>
@@ -10,11 +12,28 @@ const Navbar = () => {
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
       </div>
+      <ul
+        tabIndex={0}
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        
+        <li><NavLink className={({isActive})=>(isActive ? 'text-blue-500 underline' : '')} to={'/'}>Home</NavLink></li>
+        <li><NavLink className={({isActive})=>(isActive ? 'text-blue-500 underline' : '')} to={'mybookings'}>Bookings</NavLink></li>
+        <li><NavLink className={({isActive})=>(isActive ? 'text-blue-500 underline' : '')} to={'blogs'}>Blogs</NavLink></li>
+        <li><NavLink className={({isActive})=>(isActive ? 'text-blue-500 underline' : '')} to={'/error'}>Contact Us</NavLink></li>
+
+      </ul>
+
+
+
+    
+
+
     
     </div>
     <a className="btn btn-ghost text-xl"><img src="/public/logo.png" alt="" /> Law.BD</a>
   </div>
-  <div className="navbar-center flex">
+
+  <div className="navbar-center hidden md:flex">
     <ul className="menu menu-horizontal px-1">
      
         <li><NavLink className={({isActive})=>(isActive ? 'text-blue-500 underline' : '')} to={'/'}>Home</NavLink></li>
@@ -24,6 +43,8 @@ const Navbar = () => {
 
     </ul>
   </div>
+
+
   <div className="navbar-end">
   <button class="rounded-3xl relative rounded px-5 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
     
@@ -34,5 +55,6 @@ const Navbar = () => {
         </div>
     );
 };
+
 
 export default Navbar;

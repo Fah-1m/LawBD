@@ -4,6 +4,7 @@ import Home from "../../Pages/Home"
 import Blogs from '../../Pages/Blogs'
 import Mybookings from "../../Pages/Mybookings"
 import Details from "../../Pages/Details"
+import Error from "../../Pages/Error"
 
 
 
@@ -11,10 +12,12 @@ const router= createBrowserRouter([
     {
       path: '/',
      Component: Mainlayout,
+   errorElement: <Error/>,
      children: [
         {
             index: true,
          element: <Home/>,
+        
          loader: ()=> fetch ('/public/Fakedata.json'),
         },
         {
@@ -29,7 +32,8 @@ const router= createBrowserRouter([
             path: '/details/:id',
             element: <Details></Details>,
             loader: ()=> fetch ('/public/Fakedata.json')
-        }
+        },
+        
      ]
     }
   ])

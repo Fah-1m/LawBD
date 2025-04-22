@@ -7,9 +7,9 @@ const LawyerCard = ({infodata}) => {
 
         <div> 
        
-        <div className="card card-side bg-base-100 shadow-sm">
+        <div className="card card-side bg-base-100 shadow-sm px-10">
   <figure>
-    <img className='w-24 h-32 object-cover rounded-md'
+    <img className='md:w-24 md:h-32 object-cover rounded-md'
       src={profileImage}
       alt="Movie" />
   </figure>
@@ -20,7 +20,7 @@ const LawyerCard = ({infodata}) => {
     </div>
    
     <h2 className="card-title">{name}</h2>
-    <p>{specialty}</p>
+    <p>{specialty}</p> <hr></hr>
             <p>{license}</p> 
 
     <Link to={`/details/${id}`}>

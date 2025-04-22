@@ -2,9 +2,12 @@ import React from 'react';
 import { Link, useLoaderData, useParams } from 'react-router';
 import { CiCircleAlert } from "react-icons/ci";
 import { bookLawyer } from '../Component/Utils';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 
 const Details = () => {
+    
     const data = useLoaderData()
 
     const {id} = useParams()
@@ -15,12 +18,14 @@ const Details = () => {
 
 
     const handleBookLawyer =()=>{
-
+        
         bookLawyer(singleinfo)
     }
 
     return (
+        
         <div>
+             
 
             <div className='text-center my-8 bg-base-200 p-16'>
                 <h1 className='text-3xl font-bold my-5'>Lawyer’s Profile Details</h1>

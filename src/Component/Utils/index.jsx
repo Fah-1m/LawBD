@@ -10,11 +10,12 @@ export const getfav =()=>{
 export const bookLawyer = lawyer =>{
 const booked= getfav();
 const exist = booked.find(p=>p.id===lawyer.id)
-if(exist) { toast.error("Already added!");
+if(exist) { toast.error("Already added! You cannot Booked twice");
     return 
 }
 
 console.log("already ache") 
+toast.success('Congratulation!! Appointment booked!');
 booked.push(lawyer)
 console.log(booked)
 localStorage.setItem("lawyer", JSON.stringify(booked))

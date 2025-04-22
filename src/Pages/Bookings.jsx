@@ -12,14 +12,7 @@ console.log(infodata)
 
 
     return (
-        <div>
-       <div>
-        <div>
-                             </div>
-                 
-                     
-       </div>
-<div>
+     
 <div className='border-1 rounded-2xl my-8 px-8 py-4'>
             <div className='flex justify-between'>
 
@@ -33,9 +26,9 @@ console.log(infodata)
           
          
         </div>
-</div>
+    
 
-        </div>
+
         
       
     );
