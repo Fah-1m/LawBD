@@ -58,7 +58,7 @@ const Details = () => {
 
             <div className='text-center my-8 bg-base-200 p-16'>
                 <h1 className='text-3xl font-bold my-5'>Lawyer’s Profile Details</h1>
-                <p >Lorem ipsum dolor sit amet consectetur. Sit enim blandit orci tortor amet ut. Suscipit sed est fermentum magna. Quis vitae tempus facilisis turpis imperdiet mattis donec dignissim volutpat.</p>
+                <p >A lawyer is a trained and licensed professional who represents clients in legal matters. Their role involves advising individuals, businesses, or organizations on their rights and responsibilities, drafting legal documents, and representing clients in court or legal negotiations.</p>
             </div>
 
               <div className="card card-side bg-base-100 shadow-sm md:px-10 p-2">
@@ -67,15 +67,15 @@ const Details = () => {
       src={singleInfo.profileImage}
       alt="Movie" />
   </figure>
-  <div className="card-body w-1/5">
+  <div className="card-body">
     <div className='flex md:gap-2 gap-1'>
     <button className='text-blue-600 rounded-xl bg-blue-200 px-2'>{singleInfo.experience}</button>
     </div>
    
     <h2 className="card-title">{singleInfo.name}</h2>
-    <p>{singleInfo.specialty} <span className='ml-8'>{singleInfo.license}</span></p> 
+    <p>{singleInfo.specialty} <span className='ml-4 font-semibold'>{singleInfo.license}</span></p> 
 
-    <div className='flex md:gap-6 gap-1 items-center'>
+    <div className='flex md:gap-3 gap-1 items-center'>
         <div><h2>Availablity</h2></div>
         <div className='flex'>
     {singleInfo.weekdays?.map((day, index) => (
