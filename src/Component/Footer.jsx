@@ -6,7 +6,7 @@ const Footer = () => {
         <div>
            <footer className="mt-8 footer footer-horizontal footer-center bg-black text-primary-content p-10">
   <aside className='flex gap-4'>
-    <img src="/public/logo-footer.png" alt="" />
+    <img src="/logo-footer.png" alt="" />
     <p className='text-2xl font-bold'>Law.BD</p>
   </aside>
   <ul className="menu menu-horizontal px-1 flex gap-4">

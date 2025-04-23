@@ -1,5 +1,5 @@
 import React from 'react';
-import imgbn from '/public/banner-img-1.png'
+import imgbn from '/banner-img-1.png'
 
 
 const Hero = () => {

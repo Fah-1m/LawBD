@@ -7,6 +7,7 @@ import Details from "../../Pages/Details"
 import Error from "../../Pages/Error"
 import Nobooking from "../../Component/Nobooking"
 import Nolawyer from "../../Component/Nolawyer"
+import Loading from "../../Component/Loading"
 
 
 
@@ -14,13 +15,13 @@ const router= createBrowserRouter([
     {
       path: '/',
      Component: Mainlayout,
-   errorElement: <Error/>,
+   errorElement:  <Error/>,
      children: [
         {
             index: true,
          element: <Home/>,
         
-         loader: ()=> fetch ('/public/Fakedata.json'),
+         loader: ()=> fetch ('/Fakedata.json'),
         },
         {
             path: '/mybookings',
@@ -33,9 +34,9 @@ const router= createBrowserRouter([
         {
             path: '/details/:id',
             element: <Details></Details>,
-            // loader: ()=> fetch ('/public/Fakedata.json'),
+            // loader: ()=> fetch ('/Fakedata.json'),
             loader: async ({ params }) => {
-                const res = await fetch('/public/Fakedata.json');
+                const res = await fetch('/Fakedata.json');
                 const data = await res.json();
             
                 const item = data.find(d => d.id === parseInt(params.id));
@@ -44,8 +45,8 @@ const router= createBrowserRouter([
                   throw new Response("Not Found", { status: 404 });
                 }
             
-                return data; // or return data if you want full list
-              }
+                return data; 
+              },
         },
         {
             path: '/no',

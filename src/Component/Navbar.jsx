@@ -30,7 +30,7 @@ const Navbar = () => {
 
     
     </div>
-    <a className="btn btn-ghost text-xl"><img src="/public/logo.png" alt="" /> Law.BD</a>
+    <a className="btn btn-ghost text-xl"><img src="/logo.png" alt="" /> Law.BD</a>
   </div>
 
   <div className="navbar-center hidden md:flex">
