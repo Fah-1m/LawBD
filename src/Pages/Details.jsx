@@ -75,7 +75,7 @@ const Details = () => {
     <h2 className="card-title">{singleInfo.name}</h2>
     <p>{singleInfo.specialty} <span className='ml-8'>{singleInfo.license}</span></p> 
 
-    <div className='flex md:gap-6 gap-1 items-center mx-auto'>
+    <div className='flex md:gap-6 gap-1 items-center'>
         <div><h2>Availablity</h2></div>
         <div className='flex'>
     {singleInfo.weekdays?.map((day, index) => (
