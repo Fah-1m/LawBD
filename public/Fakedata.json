@@ -62,7 +62,7 @@
       "license": "Lisence No. 123456789",
       "status": { "available": true, "experienceLevel": "6+ Years" },
       "actions": { "viewDetailsText": "View Details", "viewDetailsLink": "/doctors/zubair-rahman" },
-      "profileImage": "path/to/profile5.jpg"
+      "profileImage":  "https://i.ibb.co.com/SXqs7rNf/Barrister-Remura-Mahbub-best-female-lawyer-in-Bangladesh.webp"
     },
     {
         "id": 6,
@@ -75,7 +75,7 @@
       "license": "Lisence No. 123456789",
       "status": { "available": false, "experienceLevel": "8+ Years" },
       "actions": { "viewDetailsText": "View Details", "viewDetailsLink": "/doctors/mehjabin-chowdhury" },
-      "profileImage": "path/to/profile6.jpg"
+      "profileImage": "https://i.ibb.co.com/jkBSdB6S/Barrister-Tahmidur-Rahman-Corporate-Lawyer-in-Bangladesh-2-1-1-scaled.jpg"
     },
     {
         "id": 7,
@@ -88,7 +88,7 @@
       "license": "Lisence No. 123456789",
       "status": { "available": true, "experienceLevel": "4+ Years" },
       "actions": { "viewDetailsText": "View Details", "viewDetailsLink": "/doctors/nasir-uddin" },
-      "profileImage": "path/to/profile7.jpg"
+      "profileImage": "https://i.ibb.co.com/KxLjkbkL/334b7b83-79e5-412b-92ab-9370605045bb.jpg"
     },
     {
         "id": 8,
@@ -101,7 +101,7 @@
       "license": "Lisence No. 15765456789",
       "status": { "available": true, "experienceLevel": "9+ Years" },
       "actions": { "viewDetailsText": "View Details", "viewDetailsLink": "/doctors/ayesha-siddiqua" },
-      "profileImage": "path/to/profile8.jpg"
+      "profileImage": "https://i.ibb.co.com/SXqs7rNf/Barrister-Remura-Mahbub-best-female-lawyer-in-Bangladesh.webp"
     },
     {
         "id": 9,
@@ -114,7 +114,8 @@
       "license": "Lisence No.00003456789",
       "status": { "available": false, "experienceLevel": "5+ Years" },
       "actions": { "viewDetailsText": "View Details", "viewDetailsLink": "/doctors/mahmudul-hasan" },
-      "profileImage": "path/to/profile9.jpg"
+      "profileImage": "https://i.ibb.co.com/5hmWWN3F/1583063573057.jpg"
+    
     },
     {
         "id": 10,
@@ -127,7 +128,7 @@
       "license": "Lisence No.253253456789",
       "status": { "available": true, "experienceLevel": "2+ Years" },
       "actions": { "viewDetailsText": "View Details", "viewDetailsLink": "/doctors/nabila-noor" },
-      "profileImage": "path/to/profile10.jpg"
+      "profileImage":  "https://i.ibb.co.com/SXqs7rNf/Barrister-Remura-Mahbub-best-female-lawyer-in-Bangladesh.webp"
     },
     {
         "id": 11,
@@ -140,7 +141,7 @@
       "license": "Lisence No. 32356789",
       "status": { "available": true, "experienceLevel": "12+ Years" },
       "actions": { "viewDetailsText": "View Details", "viewDetailsLink": "/doctors/imran-kabir" },
-      "profileImage": "path/to/profile11.jpg"
+      "profileImage":  "https://i.ibb.co.com/KxLjkbkL/334b7b83-79e5-412b-92ab-9370605045bb.jpg"
     },
     {
         "id": 12,
@@ -153,7 +154,7 @@
       "license": "Lisence No. 989323789",
       "status": { "available": false, "experienceLevel": "6+ Years" },
       "actions": { "viewDetailsText": "View Details", "viewDetailsLink": "/doctors/sadia-nahar" },
-      "profileImage": "path/to/profile12.jpg"
+      "profileImage": "https://i.ibb.co.com/5hmWWN3F/1583063573057.jpg"
     }
   ]
   

@@ -9,7 +9,7 @@ const Error = () => {
         <div>
             <Navbar/>
             <div className='my-10'>
-            <img className='w-full h-110' src="/public/404_page-not-found-1536x864.webp" alt="" />
+            <img className='w-full h-110' src="/404_page-not-found-1536x864.webp" alt="" />
             <h2>
             </h2>
             </div>

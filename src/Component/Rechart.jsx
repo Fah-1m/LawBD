@@ -20,7 +20,7 @@ const Rechart = ({infodata}) => {
       };
     return (
         <div>
- <BarChart width={600} height={300} data={infodata}>
+ <BarChart className='w- md:mx-auto md:my-4' width={600} height={300} data={infodata}>
     <XAxis dataKey={"name"}  />
     <YAxis dataKey={"fee"} />
     <Bar dataKey={"fee"} fill="#8884d8"

@@ -61,27 +61,27 @@ const Details = () => {
                 <p >Lorem ipsum dolor sit amet consectetur. Sit enim blandit orci tortor amet ut. Suscipit sed est fermentum magna. Quis vitae tempus facilisis turpis imperdiet mattis donec dignissim volutpat.</p>
             </div>
 
-              <div className="card card-side bg-base-100 shadow-sm px-10">
+              <div className="card card-side bg-base-100 shadow-sm md:px-10 p-2">
   <figure>
-    <img className='w-24 h-32 object-cover rounded-md'
+    <img className='md:w-24 md:h-32 w-16 h-20 object-cover rounded-md'
       src={singleInfo.profileImage}
       alt="Movie" />
   </figure>
-  <div className="card-body">
-    <div className='flex gap-2'>
+  <div className="card-body w-1/5">
+    <div className='flex md:gap-2 gap-1'>
     <button className='text-blue-600 rounded-xl bg-blue-200 px-2'>{singleInfo.experience}</button>
     </div>
    
     <h2 className="card-title">{singleInfo.name}</h2>
     <p>{singleInfo.specialty} <span className='ml-8'>{singleInfo.license}</span></p> 
 
-    <div className='flex gap-6 items-center'>
+    <div className='flex md:gap-6 gap-1 items-center mx-auto'>
         <div><h2>Availablity</h2></div>
         <div className='flex'>
     {singleInfo.weekdays?.map((day, index) => (
         <div 
           key={index}
-          className="bg-amber-100 text-red-600 px-4 py-2 rounded-lg mx-1"
+          className="bg-amber-100 text-red-600 md:px-4 md:py-2 rounded-lg mx-1"
         >
           {day}
         </div>
@@ -99,20 +99,20 @@ const Details = () => {
     </div>
 </div>
 
-<div className='my-4 p-6'>
+<div className='my-4 md:p-6'>
 
-<h2 className='font-bold text-center text-2xl mb-4'>Book an Appointment</h2>
+<h2 className='font-bold text-center md:text-2xl mb-4'>Book an Appointment</h2>
 
-<div className='flex justify-between'>
+<div className='flex justify-between gap-1'>
 <h2 className='font-bold text-xl'>Availablity</h2>
-<h2 className='bg-green-100 text-green-700 rounded-2xl px-4 font-semibold'>Lawyer  Available Today</h2>
+<h2 className='bg-green-100 text-green-700 rounded-2xl md:px-4 text-center md:font-semibold'>Lawyer  Available Today</h2>
 
 </div>
 
 <h2 className='bg-amber-100 text-amber-500 rounded-2xl px-6 py-2 mt-8 flex items-center gap-2'><CiCircleAlert size={25}/> Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</h2>
 
 <Link to={'/mybookings'}> 
-<button onClick={handleBookLawyer} className='font-semibold bg-green-600 px-120 py-2 rounded-3xl text-xl text-white my-6'>Book Appointment Now</button>
+<button onClick={handleBookLawyer} className='font-semibold bg-green-600 md:px-115 text-center md:py-1 rounded-3xl md:text-xl text-white my-6 '>Book Appointment Now</button>
 </Link>
 </div>
 
