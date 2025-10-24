@@ -8,19 +8,6 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Details = () => {
     
-    // const data = useLoaderData()
-
-    // const {id} = useParams()
-    // const singleinfo = data.find(ab => ab.id === parseInt(id))
-    // // console.log(singleinfo)
-
-    // const {name,specialty,license,profileImage,availability,experience,weekdays,fee}= singleinfo
-
-
-    // const handleBookLawyer =()=>{
-        
-    //     bookLawyer(singleinfo)
-    // }
 
 
     const data = useLoaderData(); // full array
@@ -28,6 +15,7 @@ const Details = () => {
     const navigate = useNavigate();
   
     const singleInfo = data.find(item => item.id === parseInt(id));
+    
     
     const handleBookLawyer =()=>{
         

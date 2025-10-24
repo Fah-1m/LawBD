@@ -9,10 +9,10 @@ const LawyerContainer = ({info}) => {
 
     useEffect(() =>{
     if(showall){
-    setShowdata(info.slice(0,6))
+    setShowdata(info.slice(0,12))
     }
     else
-    setShowdata(info.slice(0,12))
+    setShowdata(info.slice(0,6))
       
 
 
@@ -41,7 +41,7 @@ const LawyerContainer = ({info}) => {
               else window.scroll(0,700)
             }
                 // console.log(showall)
-                } >{showall ? 'Show All Lawyer':'Show less'}</button>
+                } >{showall ? 'Show less':'Show All Lawyer'}</button>
 
             </div>
           

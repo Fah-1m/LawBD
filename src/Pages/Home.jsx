@@ -12,8 +12,6 @@ const Home = () => {
     return (
         <div>
       
-
-
          <Hero></Hero>
          <LawyerContainer info={data}/>
          <div className='my-6'>
