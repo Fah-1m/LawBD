@@ -15,7 +15,7 @@
     {
         "id": 2,
       "name": "Fatema Akter",
-      "specialty": "Cardiologist",
+      "specialty": "Corporate",
       "availability": "Available",
       "weekdays": ["Sunday","Monday","Tuesday","friday"],
       "fee": 3500,
@@ -28,7 +28,7 @@
     {
      "id": 3,
       "name": "Tanvir Ahmed",
-      "specialty": "Dermatologist",
+      "specialty": "Family",
       "availability": "Unavailable",
       "weekdays": ["Sunday","Monday","Tuesday","wednesday","Thursday"],
       "fee": 6000,
@@ -41,7 +41,7 @@
     {
         "id": 4,
       "name": "Shahina Yasmin",
-      "specialty": "Neurologist",
+      "specialty": "Personal",
       "availability": "Available",
       "experience": "7+ Years Experience",
       "weekdays": ["Sunday","Monday","Tuesday"],
@@ -54,7 +54,7 @@
     {
         "id": 5,
       "name": "Zubair Rahman",
-      "specialty": "Orthopedic Surgeon",
+      "specialty": "Immegration",
       "availability": "Available",
       "weekdays": ["Sunday","Monday","Tuesday"],
       "fee": 3000,
@@ -67,7 +67,7 @@
     {
         "id": 6,
       "name": "Mehjabin Chowdhury",
-      "specialty": "Pediatrician",
+      "specialty": "Employment",
       "availability": "Unavailable",
       "experience": "8+ Years Experience",
       "weekdays": ["Sunday","Monday","Tuesday"],
@@ -80,7 +80,7 @@
     {
         "id": 7,
       "name": "Nasir Uddin",
-      "specialty": "Psychiatrist",
+      "specialty": "Tax",
       "availability": "Available",
       "experience": "4+ Years Experience",
       "weekdays": ["Sunday","Monday","Tuesday"],
@@ -93,7 +93,7 @@
     {
         "id": 8,
       "name": "Ayesha Siddiqua",
-      "specialty": "Gynecologist",
+      "specialty": "RealState",
       "weekdays": ["Sunday","Monday","Tuesday"],
       "fee": 5000,
       "availability": "Available",
@@ -106,7 +106,7 @@
     {
         "id": 9,
       "name": "Mahmudul Hasan",
-      "specialty": "ENT Specialist",
+      "specialty": "Bankrupt",
       "availability": "Unavailable",
       "weekdays": ["Sunday","Monday","Tuesday"],
       "fee": 5000,
@@ -120,7 +120,7 @@
     {
         "id": 10,
       "name": "Nabila Noor",
-      "specialty": "Nutritionist",
+      "specialty": "Environment",
       "availability": "Available",
       "experience": "2+ Years Experience",
       "weekdays": ["Sunday","Monday","Tuesday"],
@@ -133,7 +133,7 @@
     {
         "id": 11,
       "name": "Imran Kabir",
-      "specialty": "Oncologist",
+      "specialty": "Animal rights",
       "availability": "Available",
       "experience": "12+ Years Experience",
       "weekdays": ["Sunday","Monday","Tuesday"],
@@ -146,7 +146,7 @@
     {
         "id": 12,
       "name": "Sadia Nahar",
-      "specialty": "Diabetologist",
+      "specialty": "Women rights",
       "availability": "Unavailable",
       "experience": "6+ Years Experience",
       "weekdays": ["Sunday","Monday","Tuesday"],

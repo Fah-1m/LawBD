@@ -20,9 +20,8 @@ const Footer = () => {
   <nav>
     
     <div className="grid grid-flow-col gap-4">
-     <a href="https://x.com/ARBijoy223"><FaTwitter size={25}/></a>
-     <a href="https://www.facebook.com/"><FaFacebook size={25}/></a>
-      <a href="https://www.linkedin.com/in/abdur-rahman-bijoy-76b821263/">
+     <a href="https://www.facebook.com/fahim.fahimurrahaman"><FaFacebook size={25}/></a>
+      <a href="https://www.linkedin.com/in/md-fahim-576305242/">
       <FaLinkedin size={25}/>
       </a>
     </div>
