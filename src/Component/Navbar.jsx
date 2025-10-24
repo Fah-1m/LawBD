@@ -1,5 +1,4 @@
 import React from 'react';
-// 1. IMPORT FROM 'react-router-dom'
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
